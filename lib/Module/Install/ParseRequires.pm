@@ -1,11 +1,10 @@
 package Module::Install::ParseRequires;
+# ABSTRACT: A Module::Install extension that provides an alternate way to specify dependencies
 
 use strict;
 use warnings;
 
 use base qw/ Module::Install::Base /;
-
-our $VERSION = 0.001;
 
 require ExtUtils::MakeMaker;
    
@@ -50,10 +49,6 @@ sub parse_recommends {
 
 1;
 __END__
-
-=head1 NAME
-
-Module::Install::ParseRequires - A Module::Install extension that provides an alternate way to specify dependencies
 
 =head1 SYNOPSIS
 
@@ -111,16 +106,6 @@ Is equivalent to:
 =head2 parse_recommends $document
 
 Same as C<parse_requires> but does a C<recommend> instead
-
-=head1 AUTHOR
-
-Robert Krimen
-
-=head1 LICENSE
-
-Copyright E<copy> Robert Krimen
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
 
 =head1 SEE ALSO
 
